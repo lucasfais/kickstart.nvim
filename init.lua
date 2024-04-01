@@ -887,7 +887,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<C-k>', '<cmd> TmuxNavigateUp<CR>', { desc = 'Move focus to the upper window' })
     end,
   },
-  {
+  { -- Open File on GitHub -- try :OpenInGH...
     'Almo7aya/openingh.nvim',
   },
 
