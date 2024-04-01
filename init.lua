@@ -890,6 +890,17 @@ require('lazy').setup({
   { -- Open File on GitHub -- try :OpenInGH...
     'Almo7aya/openingh.nvim',
   },
+  { -- dim inactive split windows
+    'miversen33/sunglasses.nvim',
+    config = function()
+      local sunglasses_options = {
+        filter_percent = 0.20,
+        refresh_timer = 0,
+      }
+
+      require('sunglasses').setup(sunglasses_options)
+    end,
+  },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
